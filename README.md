@@ -47,6 +47,13 @@ A complex number class was created (along with all complex and real number opera
 A brute force decryption algorithm using the DFT was then applied to the array to retrieve the exact parameters of the sinusoidal formula to reverse the encryption and thus return the plain text.
 Finally, to determine if a text document was actually the interleaving of two other signals, a recursive untangling algorithm was constructed to determine whether an input signal was an interleaving.  
 
+The equation for the encryption algorithm is given as:
+<p align="center"><img src="img_2.png" width="50%" height="50%" ></p>  
+where c_i represents the ith array element, P is the encryption period, and A is the encryption amplitude. Note to decrypt the cipher text, P and A must be determined.  
+  
+The equation for the DFT is given as:
+<p align="center"><img src="img_3.png" width="50%" height="50%" ></p>  
+
 
 
 
