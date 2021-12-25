@@ -1,4 +1,4 @@
-## Document Analyzer  
+# Document Analyzer  
 This project is about analyzing text documents based on many metrics. Many famous algorithms, techniques, and third party APIs are implemented in Java to perform document analysis. Features such as 
 text metrics, sentiment metrics, plagiarism checking, document encryption/decryption, data untangling, etc. are provided in a comprehensive way.  
 
@@ -26,12 +26,20 @@ A sentence is defined to be a sequence of characters that is terminated by the c
 ### Part 2: Sentiment Analysis  
 Using the Google Cloud Natural Language API, the sentiment of each individual sentence in a document can be artifically quantified and extracted.  
 This aims to determine the tone/sentiment of a text document and labels it as "positive" or "negative". Additionally, the implementation also directs users to the most positive and most negative sentence.  
-**Specs, gradle stuff, and runtime stuff**  
+  
+**Note: if you would like to use the Cloud API, you need to register for an account under Google, get the JSON credentials file, include it into your Run Configurations field, and update your Gradle/Maven dependencies.**  
+
 
 ### Part 3: Document Similarity and Plagiarism Checking  
 Modelling a union-find algorithm with similarity metrics, multiple documents can be grouped based on their similarity.  
 Similarity is determined using the **Jensen-Shannon Divergence** equation adapted for word and sentence statistics.  
 The similarity metric aims to provide users with a series of similar documents and also provide plagariasm checking capability on multiple documents.  
+
+Since Markdown doesn't natively support equations, here is a image detailing the Jensen-Shannon Divergence equation adapted for this context:
+<img src="img.png" alt="img" width="200"/>  
+
+Finally, the **Document Divergence** is computed using the following formula to produce the document level similarity metric used in the union-find algorithm:  
+<p align="center"><img src="img_1.png" width="50%" height="50%" ></p>
 
 ### Part 4: Fourier Transform, Cryptanalysis, and Data Untangling  
 This part of the project uses the Discrete Fourier Transform (DFT) to encrypt and decrypt text documents.  
