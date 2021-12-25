@@ -53,6 +53,11 @@ where c_i represents the ith array element, P is the encryption period, and A is
   
 The equation for the DFT is given as:
 <p align="center"><img src="img_3.png" width="50%" height="50%" ></p>  
+  
+Decrypting the cipher text uses the DFT to determine the P and A encryption parameters. After applying DFT to the encrypted text, the element with greatest magnitude reveals the encryption period and amplitude.  
+Because encryption A is limited to 4 values, determining A is straightforward and uses rounding to the nearest value. P is determined using the index of the highlighted element in the array the DFT outputs.  
+Thus, with the encryption algorithm and encryption parameters known, the ciphertext can be decrypted.  
+
 
 
 
