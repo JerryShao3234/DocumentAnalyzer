@@ -36,7 +36,7 @@ Similarity is determined using the **Jensen-Shannon Divergence** equation adapte
 The similarity metric aims to provide users with a series of similar documents and also provide plagariasm checking capability on multiple documents.  
 
 Since Markdown doesn't natively support equations, here is a image detailing the Jensen-Shannon Divergence equation adapted for this context:
-<p align="center"><img src="img.png" width="50%" height="50%" ></p>  
+<p align="center"><img src="img.png" width="100%" height="100%" ></p>  
 
 Finally, the **Document Divergence** is computed using the following formula to produce the document level similarity metric used in the union-find algorithm:  
 <p align="center"><img src="img_1.png" width="50%" height="50%" ></p>
